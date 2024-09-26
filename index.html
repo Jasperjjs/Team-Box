@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCM Team Box Desig</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomhuria:wght@400&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="leaders-section">
+        <div class="team-name">
+          <span class="global-church-movement">Global Church Movement</span>
+        </div>
+        <div class="leaders">
+          <div class="staff">
+            <div class="staff-card"></div>
+            <div class="ellipse"><img class="profile-pic" src="/assets/images/Profile-pic-1.png" alt=""></div>
+            <div class="mid">
+              <span class="name">Logan Powell</span>
+              <div class="responsibilities">
+                <div class="finance"><img class="money" src="/assets/images/Money.png" alt=""></div>
+                <div class="mpd"><span class="mpd-2">MPD</span></div>
+                <div class="crisis r3"><img class="crisis-2" src="/assets/images/Crisi.png" alt=""></div>
+              </div>
+            </div>
+            <div class="job-title">
+              <span class="job">PRESIDENT</span>
+            </div>
+          </div>
+          <div class="staff">
+            <div class="staff-card"></div>
+            <div class="ellipse"><img class="profile-pic" src="/assets/images/Profile-pic-2.png" alt=""></div>
+            <div class="mid">
+              <span class="name">Scarlett Reed</span>
+              <div class="responsibilities">
+                <div class="mpd r2"><span class="mpd-2">MPD</span></div>
+              </div>
+            </div>
+            <div class="job-title">
+              <span class="job">VICE PRESIDENT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="members-section">
+        <div class="members">
+          <div class="staff">
+            <div class="staff-card"></div>
+            <div class="ellipse"><img class="profile-pic" src="/assets/images/Profile-pic-3.png" alt=""></div>
+            <div class="mid">
+              <span class="name">Isabella Flores</span>
+              <div class="responsibilities">
+                <div class="finance"><img class="money" src="/assets/images/Money.png" alt=""></div>
+                
+              </div>
+            </div>
+            <div class="job-title">
+              <span class="job">BUDGET DIRECTOR</span>
+            </div>
+          </div>
+          <div class="staff">
+            <div class="staff-card"></div>
+            <div class="ellipse"><img class="profile-pic" src="/assets/images/Profile-pic-4.png" alt=""></div>
+            <div class="mid">
+              <span class="name">Daniel Stewart</span>
+              <div class="responsibilities">
+                <div class="crisis"><img class="crisis-2" src="/assets/images/Crisi.png" alt=""></div>
+              </div>
+            </div>
+            <div class="job-title">
+              <span class="job">FSN LEAD</span>
+            </div>
+          </div>
+          <div class="staff">
+            <div class="staff-card a2"></div>
+            <div class="ellipse"><img class="profile-pic" src="/assets/images/Profile-pic-5.png" alt=""></div>
+            <div class="mid">
+              <span class="name">Samuel Edwards</span>
+              <div class="responsibilities">
+                <div class="finance"><img class="money" src="/assets/images/Money.png" alt=""></div>
+                <div class="mpd"><span class="mpd-2">MPD</span></div>
+                <div class="crisis r3"><img class="crisis-2" src="/assets/images/Crisi.png" alt=""></div>
+              </div>
+            </div>
+            <div class="job-title">
+              <span class="job"
+                >TEAM CULTURE & WELFARE DIRECTOR</span
+              >
+            </div>
+          </div>
+        </div>
+        <button class="active-button" id="activeButton">
+          <div class="group" id="groupIcon">
+            <img src="./assets/images/Active.svg" alt="icon" id="iconImage">
+          </div>
+          <span class="active">ACTIVE</span>
+        </button>        
+        <script>
+          document.getElementById('activeButton').addEventListener('click', function() {
+            const button = this;
+            const iconImage = document.getElementById('iconImage');
+        
+            if (button.style.background === 'grey') {
+              button.style.background = '#4bc90f';
+              iconImage.src = './assets/images/Active.svg';
+            } else {
+              button.style.background = 'grey';
+              iconImage.src = './assets/images/Unactive.svg';
+            }
+          });
+        </script>
+        
+      </div>
+    </div>
+  </body>
+</html>
